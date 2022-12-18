@@ -12,7 +12,7 @@ public class calculator {
 
         char ao = input.next().charAt(0);
 
-        if (ao == '+'){
+        /*if (ao == '+'){
             System.out.println(firstNumber+secondNum);
         }
         else if (ao == '-'){
@@ -23,6 +23,29 @@ public class calculator {
         }
         else if (ao == '/'){
             System.out.println(firstNumber/secondNum);
+        }
+
+         */
+
+        switch (ao){
+            case '+': {
+                System.out.println(firstNumber + secondNum);
+                break;
+            }
+            case '-': {
+                System.out.println(firstNumber - secondNum);
+                break;
+            }
+            case '*': {
+                System.out.println(firstNumber * secondNum);
+                break;
+            }
+            case'/': {
+                System.out.println(firstNumber / secondNum);
+                break;
+            }
+            default:
+
         }
 
     }
